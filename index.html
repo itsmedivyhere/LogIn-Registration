@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h2>Let's Travel</h2>
+            <p>Welcome to the Travel World</p>
+        </div>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <button class="btnlogin-popup">Log in</button>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <div class="close"><ion-icon name="close-circle-outline"></ion-icon></div>
+
+        <!--Log in page-->
+        <div class="form-box login">
+            <h2>Log in</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="e4ebfe8e-a586-4810-95bc-7832e27eed83">
+                <!--input fields-->
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" name="email" placeholder="" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input class="password" type="password" name="password" placeholder="" required>
+                    <label>Password</label>
+                </div>
+                <!--checkbox-->
+                <div class="show-pass">                    
+                    <label><input class="checkbox-pass" type="checkbox" name="checkbox">
+                        Show Password</label>
+                </div>
+                <div class="forget">
+                    <label><input type="checkbox" name="checkbox">
+                        Remember Me</label>
+                    <a href="">Forgot Password?</a>
+                </div>
+                <!--login button-->
+                <button class="btn" type="submit">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account?
+                    </p>
+                    <a href="#" class="register-link">Register Here</a>
+                </div>
+            </form>
+        </div>
+
+        <!--Registration Page-->
+        <div class="form-box register">
+            <h2>Registeration</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="e4ebfe8e-a586-4810-95bc-7832e27eed83">
+                <!--input fields-->
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <input type="text" name="text" placeholder="" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" name="email" placeholder="" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" name="password" placeholder="" required>
+                    <label>Password</label>
+                </div>
+                <!--checkbox-->
+                <div class="forget">
+                    <label>
+                        <input type="checkbox" name="checkbox">I agree to the Terms & Conditions
+                    </label>
+                </div>
+                <!--register button-->
+                <button class="btn" type="submit">Sign up</button>
+                <div class="login-register">
+                    <p>Already have an account?
+                        <a href="#" class="login-link">Login Here</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
